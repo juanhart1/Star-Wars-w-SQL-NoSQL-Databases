@@ -27,7 +27,7 @@ router.get('/film',
 
 router.post('/character',
   starWarsController.addCharacter,
-  (req, res) => res.status(200).json({})
+  (req, res) => res.status(200).json(res.locals.character)
 );
 
 module.exports = router;
